@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VB Film Makers | Official Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ================= GLOBAL STYLE ================= */
+body{
+  margin:0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946") no-repeat center fixed;
+  background-size: cover;
+  color:#333;
+}
+
+.overlay{
+  background: rgba(255,255,255,0.93);
+  min-height:100vh;
+}
+
+/* ================= HEADER ================= */
+header{
+  background: linear-gradient(90deg,#ff6fae,#6ec6ff);
+  padding:15px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+header img{
+  height:70px;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:600;
+}
+
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* ================= SECTIONS ================= */
+.section{
+  display:none;
+  padding:40px 8%;
+}
+
+.section.active{
+  display:block;
+}
+
+h1,h2{
+  color:#ff4fa3;
+}
+
+/* ================= SLIDESHOW ================= */
+.slideshow{
+  max-width:900px;
+  margin:40px auto;
+  position:relative;
+}
+
+.slideshow img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+  border-radius:12px;
+  display:none;
+}
+
+.slideshow img.active{
+  display:block;
+}
+
+/* ================= TABLE ================= */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+th,td{
+  border:1px solid #ccc;
+  padding:10px;
+  text-align:center;
+}
+
+th{
+  background:#6ec6ff;
+  color:#fff;
+}
+
+/* ================= GALLERY ================= */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  margin-top:30px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#333;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<!-- ================= HEADER ================= -->
+<header>
+  <img src="https://i.ibb.co/hJhxMc4p/vbfilm-logo.jpg">
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('about')">About Us</a>
+    <a href="#" onclick="showPage('projects')">Projects</a>
+    <a href="#" onclick="showPage('awards')">Awards</a>
+    <a href="#" onclick="showPage('press')">Press Kit</a>
+    <a href="#" onclick="showPage('upcoming')">Upcoming</a>
+    <a href="#" onclick="showPage('contact')">Contact Us</a>
+  </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="section active">
+  <h1>Welcome to VB Film Makers</h1>
+  <p>An established film & television production company since 1995.</p>
+
+  <div class="slideshow">
+    <img class="active" src="https://i.ibb.co/DPrJDyzq/vbfilmmakers.jpg">
+    <img src="https://i.ibb.co/C5CT0WpB/LMS-stills30.jpg">
+    <img src="https://i.ibb.co/N2TRQ9jf/LMS-stills23.jpg">
+    <img src="https://i.ibb.co/GQhwn8qx/Poster-new-2.jpg">
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+<h2>About VB Film Makers</h2>
+
+<p>
+VB Film Makers is an established film and television production company in India set up in 1995.
+We actively involve in film production and television serials distributed worldwide.
+</p>
+
+<p>
+We undertake short films, feature films, ad films, corporate and documentary projects,
+focusing on strong social themes blended with entertainment.
+</p>
+
+<h3>Founder – R. Buvana (Buvana Ram)</h3>
+<p>
+R. Buvana is a filmmaker, producer, director and distributor.  
+She studied filmmaking at the <strong>University of Melbourne</strong> and <strong>Los Angeles, USA</strong>.
+She began her career as a journalist and is capable of writing, directing and executing
+complete media projects independently.
+</p>
+
+<p>
+She undertakes projects on a first-copy basis and has represented Indian cinema internationally.
+</p>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+<h2>Filmography of Buvana</h2>
+
+<table>
+<tr>
+<th>Title</th><th>Type</th><th>Year</th><th>Designation</th>
+</tr>
+<tr><td>Chennai Harbour</td><td>Documentary</td><td>1994–95</td><td>Producer / Director</td></tr>
+<tr><td>Adhu Oru Samrajyam</td><td>Tele Serial</td><td>1995–96</td><td>Producer / Director</td></tr>
+<tr><td>Malaria</td><td>Documentary</td><td>1995–96</td><td>Producer / Director</td></tr>
+<tr><td>Magalir Mattum</td><td>Variety</td><td>1997–98</td><td>Producer / Director</td></tr>
+<tr><td>Geetham Sangeetham</td><td>Film Programme</td><td>1998</td><td>Producer / Director</td></tr>
+<tr><td>Gnana Sooriyan</td><td>Spiritual</td><td>1998–99</td><td>Producer / Director</td></tr>
+<tr><td>Meera</td><td>Tele Serial</td><td>2001</td><td>Producer / Director</td></tr>
+<tr><td>Aayeeshaa</td><td>Short Film</td><td>2002</td><td>Creative Director & Producer</td></tr>
+<tr><td>Thedal</td><td>Short Film</td><td>2003</td><td>Producer / Director</td></tr>
+<tr><td>Inii</td><td>Short Film</td><td>2004</td><td>Producer / Director</td></tr>
+<tr><td>Rightaa Thappaa?</td><td>Feature Film</td><td>2005</td><td>Producer / Director</td></tr>
+<tr><td>Maa Thavam</td><td>Short Film</td><td>2009–10</td><td>Producer / Director</td></tr>
+<tr><td>Agalya</td><td>Short Film</td><td>2012</td><td>Writer / Director / Producer</td></tr>
+<tr><td>Elixir</td><td>Documentary</td><td>2014</td><td>Writer / Director / Producer</td></tr>
+</table>
+</section>
+
+<!-- ================= AWARDS ================= -->
+<section id="awards" class="section">
+<h2>Awards & Recognition</h2>
+
+<h3>Aayeeshaa (2002)</h3>
+<ul>
+<li>First Best Short Film – London</li>
+<li>Second Best Short Film – MIFF</li>
+<li>Best Film – IDPA</li>
+</ul>
+
+<h3>Rightaa Thappaa</h3>
+<ul>
+<li>Tamil Nadu State Award – Best Family Film</li>
+<li>Best Woman Director – Film Fans Association</li>
+</ul>
+
+<h3>Maa Thavam</h3>
+<ul>
+<li>Global Film Festival – 2010</li>
+<li>Short Film Maker Award – 2010</li>
+</ul>
+</section>
+
+<!-- ================= PRESS KIT ================= -->
+<section id="press" class="section">
+<h2>Press Kit & Gallery</h2>
+
+<div class="gallery">
+<img src="https://i.ibb.co/FkT0bQZg/25-logo.jpg">
+<img src="https://i.ibb.co/xt9Y3n3n/bharathiyar.jpg">
+<img src="https://i.ibb.co/99cK71c3/showreel.gif">
+<img src="https://i.ibb.co/YK6RYCg/suriyatrust.gif">
+<img src="https://i.ibb.co/DPrJDyzq/vbfilmmakers.jpg">
+<img src="https://i.ibb.co/zH41q2jN/469083618-562905289804996-3713378751514892817-n.jpg">
+</div>
+</section>
+
+<!-- ================= UPCOMING ================= -->
+<section id="upcoming" class="section">
+<h2>Upcoming Projects</h2>
+<p>New feature films and international collaborations are currently under development.</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+<h2>Contact Us</h2>
+
+<p><strong>VB Film Makers</strong><br>
+Chennai, India</p>
+
+<p>
+📞 Office: 044-23761773 <br>
+📱 Mobile: +91 98400 19198 <br>
+✉ Email: vbfilmmakers@gmail.com
+</p>
+
+<p>
+<strong>Branch Office:</strong><br>
+VB Filmmakers LLC<br>
+California, USA
+</p>
+</section>
+
+<footer>
+© VB Film Makers | Designed for vbfilmmakers.com-Maintained by RK infotech avadi
+</footer>
+
+</div>
+
+<script>
+function showPage(id){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+let slides=document.querySelectorAll(".slideshow img");
+let i=0;
+setInterval(()=>{
+  slides[i].classList.remove("active");
+  i=(i+1)%slides.length;
+  slides[i].classList.add("active");
+},3000);
+</script>
+
+</body>
+</html>
